@@ -32,7 +32,7 @@ public class FrontConverterController {
 		
 		try {
 	
-	 formula = restTmp.getForObject("http://localhost:8080/getConvertedUnit/convertedUnit", String.class);
+	 formula = restTmp.getForObject("http://localhost:8080/getConvertedUnit/{convertedUnit}", String.class);
 	
 		}catch(Exception e) {
 			System.out.println("exception at the time of crud microservice callng"+e);
